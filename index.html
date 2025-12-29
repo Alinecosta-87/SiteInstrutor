@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instrutor de Direção - Sua Jornada com Confiança</title>
+        <!-- Inclui o CDN do Tailwind CSS para fácil estilização -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            /* Define a fonte Inter para todo o corpo do documento */
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+
+            section{
+                align-items: center;
+            }
+            /* Estilos personalizados para o degradê e sombra no texto */
+            .text-shadow-light {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            /* Responsividade para iframes de vídeo (YouTube) */
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                background: #000;
+                border-radius: 0.75rem; /* rounded-lg */
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body class="bg-black text-white antialiased">
+
+        <!-- Cabeçalho da Página -->
+        <header class="bg-black py-4 shadow-lg">
+            <nav class="container mx-auto flex justify-between items-center px-4">
+                <!-- Logo ou Nome do Instrutor -->
+                <p align="center"><img src="imagens/logooficial1.png" alt="logo"></p>
+                <a href="#" class="text-3xl font-bold text-yellow-400 rounded-md p-2 hover:text-yellow-500 transition-colors">
+                    <span class="text-shadow-light"></span>
+                </a>
+                <!-- Navegação Principal para Telas Maiores -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#hero" class="text-white hover:text-yellow-400 transition-colors text-lg">Início</a></li>
+                    <li><a href="#services" class="text-white hover:text-yellow-400 transition-colors text-lg">Serviços</a></li>
+                    <li><a href="#benefits" class="text-white hover:text-yellow-400 transition-colors text-lg">Benefícios</a></li>
+                    <li><a href="#videos" class="text-white hover:text-yellow-400 transition-colors text-lg">Vídeos</a></li>
+                    <li><a href="#contact" class="text-white hover:text-yellow-400 transition-colors text-lg">Contato</a></li>
+                </ul>
+                <!-- Botões de Ação no Cabeçalho -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="#budget-cta" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition-colors shadow-md">
+                        Orçamento
+                    </a>
+                    <a href="https://wa.me/5521988411302?text=Desejo%20solicitar%20um%20or%C3%A7amento!" target="_blank" class="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-colors shadow-md">
+                        WhatsApp
+                    </a>
+                </div>
+                <!-- Menu Hamburger para Telas Menores -->
+
+            </nav>
+        </header>
+
+        <!-- Seção Principal (Hero Section) -->
+        <main>
+            <section id="hero" class="relative bg-black text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75 overflow-hidden">
+                <!-- Imagem de fundo ou decorativa (placeholder) -->
+                <div class="absolute inset-0">
+                    <img src="imagens/carro.PNG" alt="Pessoa dirigindo com confiança" class="w-full h-full object-cover opacity-30">
+                </div>
+                <!-- Camada de sobreposição para contraste e efeito visual -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90"></div>
+
+                <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-yellow-400 text-shadow-light">
+                        Transforme o Medo em Confiança ao Volante! 
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Aulas particulares e personalizadas para você conquistar a liberdade de dirigir,
+                        seja você habilitado ou iniciante. Em breve - Novas regras para tirar sua habilitação seguindo a CNH BRASIL
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#budget-cta" class="bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            Solicite um Orçamento
+                        </a>
+                        <a href="https://wa.me/5521988411302?text=Desejo%20solicitar%20um%20or%C3%A7amento!" target="_blank" class="border border-yellow-400 text-yellow-400 px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            Fale no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Seção: Aulas para Habilitados -->
+            <section id="services" class="bg-gray-950 py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Aulas para Habilitados: Refine Sua Direção!</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                        Já tem sua CNH, mas ainda sente insegurança ou precisa aprimorar técnicas?
+                        Nossas aulas são focadas em suas necessidades específicas, para você dirigir com total segurança e confiança.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <!-- Foco em Baliza -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Domine a Baliza e Estacionamento</h3>
+                            <p class="text-gray-300">Técnicas avançadas para estacionar em qualquer vaga com facilidade.</p>
+                        </div>
+                        <!-- Foco em Trânsito Pesado -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Dirija no Trânsito Pesado com Segurança</h3>
+                            <p class="text-gray-300">Conquiste ruas movimentadas e rodovias sem estresse.</p>
+                        </div>
+                        <!-- Foco em Revisão Geral -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Revisão e Atualização de Habilidades</h3>
+                            <p class="text-gray-300">Recupere a prática e se atualize com as melhores técnicas de direção defensiva.</p>
+                        </div>
+                    </div>
+                    <a href="#budget-cta" class="bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Agende Suas Aulas para Habilitados
+                    </a>
+                </div>
+            </section>
+
+
+
+            <!-- SEÇÃO CATEGORIA B -->
+            <section id="services" class="bg-gray-950 py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Categoria B</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                        Tirar a CNH categoria B traz várias vantagens, aqui estão 3 benefícios principais:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <!-- Foco em Baliza -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Independência e Mobilidade</h3>
+                            <p class="text-gray-300">Você pode dirigir carros de passeio e utilitários leves, sem depender de transporte público ou de terceiros.</p>
+                        </div>
+                        <!-- Foco em Trânsito Pesado -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Oportunidades Profissionais</h3>
+                            <p class="text-gray-300">Muitas vagas de emprego exigem CNH B, mesmo que não sejam diretamente para motorista(visitas a clientes,deslocamento entre unidades, etc.).</p>
+                        </div>
+                        <!-- Foco em Revisão Geral -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Facilidade no dia a dia</h3>
+                            <p class="text-gray-300">Com a habilitação, você consegue viajar, resolver compromissos e até ajudar familiares em emergências de forma mais prática.</p>
+                        </div>
+                    </div>
+                    <a href="#budget-cta" class="bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Desejo um orçamento 
+                    </a>
+                </div>
+            </section>
+
+            <!-- SEÇÃO INCLUSÃO DE CATEGORIA B -->
+            <section id="services" class="bg-gray-950 py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Inclusão de categoria B</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                        Três motivos fortes para incluir a Categoria B na sua habilitação:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <!-- Foco em Baliza -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Mais liberdade de escolha</h3>
+                            <p class="text-gray-300">Você pode optar entre dirigir carro ou moto, sem ficar limitado.</p>
+                        </div>
+                        <!-- Foco em Trânsito Pesado -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Versatilidade</h3>
+                            <p class="text-gray-300">Ter categorias diferentes na CNH amplia suas possibilidades de uso no dia a dia.</p>
+                        </div>
+                        <!-- Foco em Revisão Geral -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-yellow-700">
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Preparação para o futuro</h3>
+                            <p class="text-gray-300">Se em algum momento você precisar de um carro(família, trabalho ou viagem), já estará habilitado.</p>
+                        </div>
+                    </div>
+                    <a href="#budget-cta" class="bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Desejo um orçamento 
+                    </a>
+                </div>
+            </section>
+
+
+
+
+            <!-- Seção: Benefícios do Instrutor Particular -->
+            <section id="benefits" class="bg-black py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Por que um Instrutor Particular faz a Diferença?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Benefício 1 -->
+                        <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-yellow-700 transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-yellow-400 text-5xl mb-4">🎯</div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Aulas Personalizadas</h3>
+                            <p class="text-gray-300">Foco total nas suas dificuldades e no seu ritmo de aprendizado.</p>
+                        </div>
+                        <!-- Benefício 2 -->
+                        <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-yellow-700 transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-yellow-400 text-5xl mb-4">🗓️</div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Flexibilidade de Horários</h3>
+                            <p class="text-gray-300">Agende suas aulas de acordo com sua disponibilidade.</p>
+                        </div>
+                        <!-- Benefício 3 -->
+                        <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-yellow-700 transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-yellow-400 text-5xl mb-4">🧘‍♀️</div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Ambiente Tranquilo</h3>
+                            <p class="text-gray-300">Aulas em um carro adaptado, com foco na sua segurança e bem-estar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Seção: Superando o Medo e a Ansiedade -->
+            <section class="bg-gray-950 py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Adeus ao Medo e à Ansiedade ao Dirigir!</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                        Entendemos que dirigir pode ser desafiador. Com a metodologia certa e um suporte empático,
+                        você desenvolverá a confiança necessária para superar o medo e controlar a ansiedade ao volante.
+                        Acreditamos no seu potencial!
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                        <div class="max-w-md">
+                            <img src="imagens/uma pessoa confiante.png" alt="Pessoa confiante dirigindo" class="rounded-lg shadow-lg border border-yellow-600">
+                        </div>
+                        <div class="text-left max-w-lg">
+                            <ul class="list-disc list-inside text-gray-300 text-lg space-y-3">
+                                <li><strong class="text-yellow-400">Técnicas de Relaxamento:</strong> Aprenda a manter a calma em situações de trânsito.</li>
+                                <li><strong class="text-yellow-400">Exposição Gradual:</strong> Enfrente seus medos passo a passo, no seu tempo.</li>
+                                <li><strong class="text-yellow-400">Simulações Realistas:</strong> Prepare-se para cenários diversos em um ambiente controlado.</li>
+                                <li><strong class="text-yellow-400">Apoio Psicológico:</strong> Entendimento e paciência para cada etapa da sua evolução.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#contact" class="mt-12 inline-block bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Quero Superar o Medo!
+                    </a>
+                </div>
+            </section>
+
+
+
+            <!-- Seção de Vídeos do YouTube -->
+            <section id="videos" class="bg-black py-16 md:py-24">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-bold text-yellow-400 mb-12">Confira alguns Vídeos e Dicas!</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                        Assista a vídeos com dicas de direção, demonstrações de manobras e depoimentos de alunos.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Vídeo 1 (Placeholder) -->
+                        <div class="video-container shadow-xl border border-yellow-700">
+                            <iframe
+                                src="https://www.youtube.com/@joaoaugustojhaba2496" 
+                                title="Dicas"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <!-- Vídeo 2 (Placeholder) -->
+                        <div class="video-container shadow-xl border border-yellow-700">
+                            <iframe
+                                src="https://www.youtube.com/@joaoaugustojhaba2496" 
+                                title="Mais sobre direção"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <!-- Adicione mais vídeos conforme necessário -->
+                    </div>
+                    <a href="https://www.youtube.com/@joaoaugustojhaba2496" target="_blank" class="mt-12 inline-block bg-yellow-400 text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Ver Mais Vídeos no YouTube
+                    </a>
+                </div>
+            </section>
+
+
+
+            <!-- Seção de Chamada para Ação Final (Orçamento e WhatsApp) -->
+            <section id="contact" class="bg-yellow-400 text-black py-16 md:py-20 text-center rounded-t-lg shadow-lg">
+                <div class="container mx-auto px-4">
+                    <h2 id="budget-cta" class="text-4xl font-bold mb-6">Pronto para dar o Próximo Passo?</h2>
+                    <p class="text-lg mb-8 max-w-3xl mx-auto">
+                        Entre em contato para solicitar um orçamento personalizado ou tire suas dúvidas diretamente via WhatsApp.
+                        Sua liberdade ao volante está mais perto do que você imagina!
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://wa.me/5521988411302?text=Desejo%20solicitar%20um%20or%C3%A7amento!" class="bg-black text-yellow-400 px-10 py-4 rounded-full text-xl font-bold hover:bg-gray-800 hover:text-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            Solicitar Orçamento
+                        </a>
+                        <a href="https://wa.me/5521988411302?text=Desejo%20solicitar%20um%20or%C3%A7amento!" target="_blank" class="border border-black text-black px-10 py-4 rounded-full text-xl font-bold hover:bg-gray-100 hover:text-black transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            Converse no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé da Página -->
+        <footer class="bg-black text-gray-400 py-10">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 Instrutor João. Todos os direitos reservados.</p>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
